@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Domain generator</title>
+    <meta charset="UTF-8" />
+    <meta content="viewport" width="device-width initialscale:1.0" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Random Domain Generator</h1>
+    </div>
+    <hr>
+    <div class="options">
+        <h2 class="opt-title">Your Options</h2>
+        <p for="pronouns">Pronouns: (separated by commas, not spaces) <input type="text" id="pronouns"
+                placeholder="ie: the,your,our,etc."></p>
+        <p for="adjectives">Adjectives: (separated by commas, not spaces) <input type="text" id="adjectives"
+                placeholder="ie: great,big,etc."></p>
+        <p for="nouns">Nouns: (separated by commas, not spaces) <input type="text" id="nouns"
+                placeholder="ie: jogger,racoon,etc."></p>
+        <p for="doms">Domains: (separated by commas, not spaces) <input type="text" id="doms"
+                placeholder="ie: .com,.es,etc."></p>
+        <div class="buttons">
+            <button class="clear" onclick="clearInputs()">Clear fields</button>
+            <button class="submit" onclick="domainGenerator()">Get Domains</button>
+        </div>
+        <h5 class="opt-empty">*If no options are provided, the default ones will be used</h5>
+    </div>
+    <hr>
+    <div class="main" id="domains">Here should be displayed the resulting domains</div>
+</body>
+<script src="app.js"></script>
+
+</html>
