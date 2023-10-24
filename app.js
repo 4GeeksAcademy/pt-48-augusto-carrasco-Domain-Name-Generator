@@ -56,10 +56,10 @@ function prepareDataToRender(generatorValues) {
 function getCombinations(generatorValues) {
   let combinations = generatorValues
     .reduce((a, b) =>
-      a.reduce((c, d) => c.concat(b.map((e) => [].concat(d, e))), [])
+      a.reduce((c, d) => [...c,...(b.map((e) => [...d,...e]))], [])
     )
     .map((e) => e.join(""));
-  // console.log(combinations);
+  console.log(combinations);
   return combinations;
 }
 
